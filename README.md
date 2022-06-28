@@ -33,7 +33,7 @@ Template from this [MICROVERSE](https://www.microverse.org/)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ABDULLALI3468/Math-Magicians.git/issues).
+Feel free to check the [issues page](https://github.com/ABDULALI3468/Math_Magicians_SPA/issues).
 
 ## Contributers
 
