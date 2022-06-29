@@ -1,5 +1,7 @@
 # # Math_Magicians_Single Page Website
 
+In this project I am creating a Single Page App using React regarding basic Calculator and its functionalities.
+
 ## Built With
 
 - HTML
