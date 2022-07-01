@@ -1,8 +1,28 @@
 // eslint-disable-next-line
+import { useState } from "react";
+import calculate from "./logic/calculate";
 import React from "react";
-import '../App.css';
+import "../App.css";
 
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: "",
+      next: "",
+      operation: "",
+    };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick = (e) => {
+    const buttonName = e.target.name;
+    this.setState((prevState) => ({
+      ...calculate(prevState, buttonName),
+    }));
+  };
+
   render() {
     return (
       <div className="container">
@@ -12,10 +32,6 @@ class Calculator extends React.Component {
 
         <div className="btns">
           <div className="row">
-            <button type="button" id="ce">
-              CE
-            </button>
-            <button type="button">x!</button>
             <button type="button" className="btn">
               (
             </button>
@@ -31,8 +47,6 @@ class Calculator extends React.Component {
           </div>
 
           <div className="row">
-            <button type="button">sin</button>
-            <button type="button">π</button>
             <button type="button" className="btn">
               7
             </button>
@@ -48,8 +62,6 @@ class Calculator extends React.Component {
           </div>
 
           <div className="row">
-            <button type="button">cos</button>
-            <button type="button">log</button>
             <button type="button" className="btn">
               4
             </button>
@@ -65,8 +77,6 @@ class Calculator extends React.Component {
           </div>
 
           <div className="row">
-            <button type="button">tan</button>
-            <button type="button">√</button>
             <button type="button" className="btn">
               1
             </button>
@@ -82,11 +92,6 @@ class Calculator extends React.Component {
           </div>
 
           <div className="row">
-            <button type="button">e</button>
-            <button type="button">
-              x
-              <span style={{ position: 'relative', bottom: '.4em', right: '.1em' }}>y</span>
-            </button>
             <button type="button" className="btn">
               0
             </button>

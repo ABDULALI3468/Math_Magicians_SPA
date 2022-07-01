@@ -21,8 +21,5 @@
     "no-shadow": "off",
     "react/prefer-stateless-function": [0, { "ignorePureComponents": "ignorePureComponents" }]
   },
-  "ignorePatterns": [
-    "dist/",
-    "build/"
-  ]
+  "ignorePatterns": ["dist/", "build/"]
 }
