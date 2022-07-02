@@ -28,10 +28,6 @@ class Calculator extends React.PureComponent {
   render() {
     const { obj } = this.state;
     return (
-      // <div className="container">
-      //   <InputResult displayState={obj} />
-      //   <Button buttonClick={this.onButtonClick} />
-      // </div>
       <div className="display">
         <InputResult displayState={obj} id="screen" />
         <Button buttonClick={this.onButtonClick} />
