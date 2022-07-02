@@ -41,7 +41,7 @@ body {
   background: #fff;
 }
 
-.display #screen {
+#screen {
   display: flex;
   justify-content: flex-end;
   align-items: center;
