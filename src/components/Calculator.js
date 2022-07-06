@@ -23,10 +23,19 @@ const Calculator = () => {
 
   const { obj } = state;
   return (
-    <div className="container">
-      <InputResult displayState={obj} id="screen" />
-      <Button buttonClick={onButtonClick} />
-    </div>
+    <>
+      <div className="calc_container">
+        <div className="heading">
+          <p className="p1">Lets Do</p>
+          <p className="p2">Some Maths</p>
+        </div>
+
+        <div className="container">
+          <InputResult displayState={obj} id="screen" />
+          <Button buttonClick={onButtonClick} />
+        </div>
+      </div>
+    </>
   );
 };
 

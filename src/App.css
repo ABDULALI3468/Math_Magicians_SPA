@@ -9,8 +9,35 @@ body {
   background: #ecf0f3;
 }
 
+.calc_container {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30vw; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20vw;
+  min-height: 60vh;
+  font-weight: bold;
+  font-size: 3em;
+  padding: 12px;
+  line-height: 1.5em;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.heading {
+  font-size: 80px;
+  font-family: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+
 .container {
-  padding: 20px;
+  padding: 40px;
   border-radius: 8px;
   box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
 }
