@@ -12,7 +12,7 @@ const Nav = () => {
     <nav className="nav">
       <h1>Math Magician</h1>
       <ul className="nav-ul">
-        <Link style={navStyle} to="/home">
+        <Link style={navStyle} to="/">
           <li>Home</li>
         </Link>
         <Link style={navStyle} to="/calculator">
