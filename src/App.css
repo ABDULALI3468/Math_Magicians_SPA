@@ -10,11 +10,6 @@ body {
 }
 
 .calc_container {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30vw; */
-
   display: flex;
   justify-content: center;
   align-items: center;
